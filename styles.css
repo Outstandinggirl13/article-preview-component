@@ -10,12 +10,13 @@
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
+    --grayish-blue-transpparent: hsla(212, 23%, 69%, 30%);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 body {
     background-color: var(--light-grayish-blue);
-    color: var(--grayish-blue);
+    color: var(--desaturated-dark-blue);
     font-family: "Manrope";
     display: flex;
     justify-content: center;
@@ -26,9 +27,82 @@ body {
 
 .article-preview {
     background-color: white;
+    box-shadow: 0 40px 50px var(--grayish-blue-transpparent);
+    border-radius: 10px;
     font-size: 13px;
-    letter-spacing: 1%;
-    width: 313px;
+    letter-spacing: 0.002em;
+    width: 327px;
+}
+
+.article-preview-image {
+    background: url(./images/drawers.jpg) left 0% top 26% / cover no-repeat;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.article-preview__info {
+    padding: 32px;
+}
+
+.article-preview__info h1 {
+    color: var(--very-dark-grayish-blue);
+    font-size: 16px;
+    margin: 4px 0 12px;
+    line-height: 150%;
+}
+
+.article-preview__info p {
+    line-height: 20px;
+    letter-spacing: 0.006em;
+}
+
+.article-preview__block {
+    padding: 0 32px 20px;
+    justify-content: space-between;
+}
+
+.article-preview__block,
+.article-preview__block-bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article-preview__block-bio img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.article-preview__block-bio div {
+    padding-left: 16px;
+    line-height: 20px;
+}
+
+.article-preview__block-bio h2 {
+    color: var(--very-dark-grayish-blue);
+    font-size: inherit;
+}
+
+.article-preview__block-bio time {
+    color: var(--grayish-blue);
+    letter-spacing: 0.01rem;
+}
+
+.article-preview__block-button {
+    border: none;
+    background-color: var(--light-grayish-blue);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-preview__window {
+    display: none;
 }
 
 .attribution { 
