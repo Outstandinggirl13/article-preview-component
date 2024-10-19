@@ -67,7 +67,6 @@ body {
     justify-content: space-between;
     position: relative;
     z-index: 0;
-    /* display: none !important; */
 }
 
 .article-preview__content-block,
@@ -149,12 +148,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-/* .article-preview__content-block__button:hover,
-.article-preview__content-block__button:active {
-    background-color: var(--desaturated-dark-blue);
-    cursor: pointer;
-} */
 
 @media (min-width: 778px) {
     
