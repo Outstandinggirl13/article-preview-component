@@ -42,6 +42,10 @@ body {
     height: 200px;
 }
 
+.article-preview__content {
+    position: relative;
+}
+
 .article-preview__content-info {
     padding: 20px 32px;
 }
@@ -61,7 +65,8 @@ body {
 .article-preview__content-block {
     padding: 12px 32px 20px;
     justify-content: space-between;
-    /* display: none !important; */
+    position: relative;
+    z-index: 0;
 }
 
 .article-preview__content-block,
@@ -72,8 +77,8 @@ body {
 }
 
 .article-preview__content-block__bio img {
-    height: 40px;
     width: 40px;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 
@@ -93,10 +98,10 @@ body {
 }
 
 .article-preview__content-block__button {
-    border: none;
     background-color: var(--light-grayish-blue);
-    height: 32px;
+    border: none;
     width: 32px;
+    aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -110,7 +115,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
-    /* display: none; */
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    transform: translate(0, -50%);
+    display: none;
 }
 
 .article-preview__window-share {
@@ -132,8 +141,8 @@ body {
 .article-preview__window-button {
     background-color: var(--desaturated-dark-blue);
     border: none;
-    height: 32px;
     width: 32px;
+    aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -158,7 +167,6 @@ body {
 
     .article-preview__content {
         width: 61%;
-        position: relative;
     }
 
     .article-preview__content-info {
@@ -173,19 +181,17 @@ body {
     }
 
     .article-preview__content-block {
-        padding: 0 40px;
+        padding: 0 40px 32px;
     }
 
     .article-preview__window {
         padding: 18px 28px;
         position: absolute;
-/*      height: 55px;
-        width: 248px; */
-        /* bottom: 0px; */
         border-radius: 10px;
         top: 46%;
         right: 0%;
         transform: translate(27%, 0);
+        width: fit-content;
     }
 
     .article-preview__window-share p {
