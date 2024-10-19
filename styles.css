@@ -72,8 +72,8 @@ body {
 }
 
 .article-preview__content-block__bio img {
-    height: 40px;
     width: 40px;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 
@@ -93,10 +93,10 @@ body {
 }
 
 .article-preview__content-block__button {
-    border: none;
     background-color: var(--light-grayish-blue);
-    height: 32px;
+    border: none;
     width: 32px;
+    aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
-    /* display: none; */
+    display: none; 
 }
 
 .article-preview__window-share {
@@ -132,8 +132,8 @@ body {
 .article-preview__window-button {
     background-color: var(--desaturated-dark-blue);
     border: none;
-    height: 32px;
     width: 32px;
+    aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -173,15 +173,12 @@ body {
     }
 
     .article-preview__content-block {
-        padding: 0 40px;
+        padding: 0 40px 32px;
     }
 
     .article-preview__window {
         padding: 18px 28px;
         position: absolute;
-/*      height: 55px;
-        width: 248px; */
-        /* bottom: 0px; */
         border-radius: 10px;
         top: 46%;
         right: 0%;
